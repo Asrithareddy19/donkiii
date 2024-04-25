@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For you</title>
+<style>
+    body{
+        background-color: rgb(246, 214, 219);
+    }
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: pink;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+</style>
+</head>
+<body>
+    <h1>To the waste fellow</h1>
+    <h4>pandi kukka gadhida dunnapothu adagadhidha balli dhomma bodinka </h4>
+  <button onclick="openPopup()">Click this</button>
+  <div class="popup" id="popup">
+    <img src="donkey.jpg" alt="Popup Image">
+    <button onclick="closePopup()">Close</button>
+  </div>
+
+  <script>
+    function openPopup() {
+      var popup = document.getElementById("popup");
+      popup.style.display = "block";
+    }
+
+    function closePopup() {
+      var popup = document.getElementById("popup");
+      popup.style.display = "none";
+    }
+  </script>
+</body>
+</html>
